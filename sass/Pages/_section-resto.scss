@@ -1,0 +1,190 @@
+.section-resto{
+    background-color: #f6f6f6;
+    width: 100%;
+    padding: 65px 0;
+    h3{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    a #img-fond--menilmontant{
+        background: url ("public/img/menilmontant.jpg");
+    }
+    a .img-fond--charonne{
+        background-image: url("../public/imag/charonne.jpg");
+    }
+    &__blocs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__blocs a{
+        display: flex;
+         flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 7%;
+        background-color: #fff;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #000;
+        width: 40%;
+        height: 550px;
+        box-shadow: 0 7px 10px lightgrey;
+        
+    }
+    &__blocs a img{
+        object-fit: cover;
+        width: 100%;
+        height: 70%;
+        border-radius: 30px 30px 0 0;
+        position: relative;
+    }
+    &__blocs .new{
+        width: 180px;
+        color: #008766;
+        background-color: #99e2d0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    &__blocs p{
+        padding-left: 5%;
+        font-size: 2em;
+        em{
+            font-weight: bold;
+            font-style: normal;
+        }
+    }
+   &__blocs div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        i{
+            padding-right: 5%;
+        }
+    }
+}
+
+    @media screen and (min-width: 320px) and (max-width: 600px){
+        .section-resto{
+            background-color: #f6f6f6;
+            width: 100%;
+            padding: 45px 0;
+            h3{
+                font-size: 1.8em;
+                padding-left: 4%;
+                text-align: left;
+                margin-top: 0;
+            }
+        &__blocs a{
+            display: flex;
+            flex-direction: column;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #000;
+            width: 90%;
+            height: 350px;
+            box-shadow: 0 7px 10px lightgrey;
+        }
+        &__blocs a img{
+            object-fit: cover;
+            width: 100%;
+            height: 70%;
+            border-radius: 30px 30px 0 0;
+            position: relative;
+        }
+        &__blocs .new{
+            width: 85px;
+            color: #008766;
+            background-color: #99e2d0;
+            padding: 8px 0 8px 17px;
+            font-size: 0.8em;
+            font-weight: 600;
+            position: sticky;
+        }
+        &__blocs p{
+            padding-left: 5%;
+            font-size: 1.3em;
+            em{
+                font-weight: bold;
+                font-style: normal;
+            }
+        }
+        &__blocs div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            i{
+                padding-right: 5%;
+            }
+        }
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 900px){
+        .section-resto{
+            background-color: #f6f6f6;
+            width: 100%;
+            padding: 45px 0;
+            h3{
+                font-size: 2.1em;
+                padding-left: 4%;
+                text-align: left;
+                margin-top: 0;
+            }
+        &__blocs a{
+            display: flex;
+            flex-direction: column;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #000;
+            width: 90%;
+            height: 400px;
+            box-shadow: 0 7px 10px lightgrey;
+        }
+        &__blocs a img{
+            object-fit: cover;
+            width: 100%;
+            height: 70%;
+            border-radius: 30px 30px 0 0;
+            position: relative;
+        }
+        &__blocs .new{
+            width: 105px;
+            color: #008766;
+            background-color: #99e2d0;
+            padding: 8px 0 8px 17px;
+            font-size: 1.1em;
+            font-weight: 600;
+            position: sticky;
+        }
+        &__blocs p{
+            padding-left: 5%;
+            font-size: 1.6em;
+            em{
+                font-weight: bold;
+                font-style: normal;
+            }
+        }
+        &__blocs div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            i{
+                padding-right: 5%;
+            }
+        }
+        }
+    }

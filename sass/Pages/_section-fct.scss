@@ -1,0 +1,178 @@
+.section-fct{
+    margin-left: auto;
+    margin-right: auto;
+     h3{
+        font-size: 2.5em;
+        text-align: center;
+        }
+        span{
+            color: #fff;
+            background-color: $color-primary;
+            padding: 10px 30px;
+            border-radius: 100%;
+            margin-right: 25px;
+            margin-left: -15px;
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 2em;
+            font-weight: bold;
+            width: 60%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 5%;
+            border-radius: 25px;
+            box-shadow: 3px 5px 15px lightgrey;            
+        }
+        &__carte1{
+            background-color: #f6f6f6;
+            padding: 30px 0;
+            margin-bottom: 25px;
+            i{
+                color: grey;
+                padding: 0 55px;
+            }
+        }
+        &__carte2{
+            background-color: #f6f6f6;
+            padding: 30px 0;
+            margin-bottom: 25px;
+            i{
+            color: grey;
+            padding: 0 47px;
+            }
+        }
+        &__carte3{
+            padding: 30px 0;
+            background-color: #f5edff;
+            margin-bottom: 75px;
+            i{
+                color: $color-primary;
+                padding: 0 45px;
+            }
+        }
+    }
+            
+        
+    @media screen and (min-width: 320px) and (max-width: 600px){
+        .section-fct{
+            margin-left: 2%;
+            margin-bottom: 10%;
+            h3{
+                font-size: 1.8em;
+                padding-left: 4%;
+                text-align: left;
+            }
+            span{
+                color: #fff;
+                background-color: $color-primary;
+                padding: 5px 12px;
+                border-radius: 100%;
+                margin-right: 25px;
+                margin-left: -15px;
+                font-size: 1em;
+            }
+            p{
+                font-size: 1em;
+                font-weight: bold;
+                width: 85%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0;
+                border-radius: 25px;
+                box-shadow: 3px 5px 15px lightgrey;
+                
+            }
+            &__carte1{
+                background-color: #f6f6f6;
+                padding: 30px 0;
+                margin-bottom: 25px;
+                i{
+                    color: grey;
+                    padding-right: 35px;
+                    padding-left: 0;
+                }
+            }
+            &__carte2{
+                background-color: #f6f6f6;
+                padding: 30px 0;
+                margin-bottom: 25px;
+                i{
+                color: grey;
+                padding-right: 27px;
+                padding-left: 0;
+                }
+            }
+            &__carte3{
+                padding: 30px 0;
+                background-color: #f5edff;
+                margin-bottom: 75px;
+                i{
+                    color: $color-primary;
+                    padding-right: 25px;
+                    padding-left: 0;
+                }
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 900px){
+        .section-fct{
+            margin-left: 2%;
+            margin-bottom: 10%;
+            h3{
+                font-size: 2.1em;
+                padding-left: 4%;
+                text-align: left;
+            }
+            span{
+                color: #fff;
+                background-color: $color-primary;
+                padding: 5px 12px;
+                border-radius: 100%;
+                margin-right: 25px;
+                margin-left: -15px;
+            }
+            p{
+                font-size: 1.3em;
+                font-weight: bold;
+                width: 85%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0;
+                border-radius: 25px;
+                box-shadow: 3px 5px 15px lightgrey;
+                
+            }
+            &__carte1{
+                background-color: #f6f6f6;
+                padding: 30px 0;
+                margin-bottom: 25px;
+                i{
+                    color: grey;
+                    padding-right: 35px;
+                }
+            }
+            &__carte2{
+                background-color: #f6f6f6;
+                padding: 30px 0;
+                margin-bottom: 25px;
+                i{
+                color: grey;
+                padding-right: 27px;
+                }
+            }
+            &__carte3{
+                padding: 30px 0;
+                background-color: #f5edff;
+                margin-bottom: 75px;
+                i{
+                    color: $color-primary;
+                    padding-right: 25px;
+                }
+            }
+            
+        }
+    }
