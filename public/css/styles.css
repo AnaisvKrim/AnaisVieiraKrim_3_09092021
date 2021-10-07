@@ -8,7 +8,8 @@ body {
   font-family: Roboto;
 }
 
-input {
+.btn-commande {
+  cursor: pointer;
   color: #fff;
   font-weight: 600;
   border-style: none;
@@ -25,7 +26,8 @@ input {
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
-  input {
+  .btn-commande {
+    cursor: pointer;
     color: #fff;
     font-weight: 600;
     border-style: none;
@@ -42,7 +44,8 @@ input {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 900px) {
-  input {
+  .btn-commande {
+    cursor: pointer;
     color: #fff;
     font-weight: 600;
     border-style: none;
@@ -58,6 +61,16 @@ input {
     font-size: 1.5em;
   }
 }
+.far {
+  cursor: pointer;
+  scale: 1;
+  transition: transmform 600ms;
+}
+.far:hover {
+  scale: 1.5;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
 footer {
   width: 100%;
   background-color: #353535;
@@ -625,14 +638,19 @@ header img {
 }
 .nav-presentation .nav__localisation {
   width: 100%;
-  font-size: 2.2em;
   background-color: #eaeaea;
   box-shadow: inset 0 7px 10px lightgrey;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: -40px 0 0 0;
+  margin: 0;
   padding: 4% 0 4% 0;
+}
+.nav-presentation .nav__localisation input {
+  width: 30%;
+  border-style: none;
+  font-weight: bold;
+  font-size: 2.5em;
+  background-color: #eaeaea;
 }
 .nav-presentation .nav__localisation img {
   width: 50px;
@@ -678,9 +696,8 @@ header img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
-  .nav__localisation {
+  .nav-presentation .nav__localisation {
     width: 100%;
-    font-size: 1.2em;
     background-color: #eaeaea;
     box-shadow: inset 0 7px 10px lightgrey;
     display: flex;
@@ -688,34 +705,40 @@ header img {
     margin: 0;
     padding: 4% 0 4% 0;
   }
-  .nav__localisation img {
+  .nav-presentation .nav__localisation input {
+    width: 40%;
+    border-style: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #eaeaea;
+  }
+  .nav-presentation .nav__localisation img {
     width: 25px;
     padding-right: 23px;
   }
-
-  .nav__bloc {
+  .nav-presentation .nav__bloc {
     background-color: #f6f6f6;
     width: 100%;
     padding-bottom: 10%;
   }
-  .nav__bloc h2 {
+  .nav-presentation .nav__bloc h2 {
     font-weight: bold;
     font-size: 2em;
     text-align: center;
     margin-top: 0;
     padding-top: 4%;
   }
-  .nav__bloc p {
+  .nav-presentation .nav__bloc p {
     font-size: 1.3em;
     text-align: center;
   }
-  .nav__bloc a {
+  .nav-presentation .nav__bloc a {
     text-decoration: none;
     font-size: 1em;
     color: #fff;
     font-weight: 500;
   }
-  .nav__bloc span {
+  .nav-presentation .nav__bloc span {
     display: block;
     text-align: center;
     width: 55%;
@@ -729,9 +752,8 @@ header img {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 900px) {
-  .nav__localisation {
+  .nav-presentation .nav__localisation {
     width: 100%;
-    font-size: 1.5em;
     background-color: #eaeaea;
     box-shadow: inset 0 7px 10px lightgrey;
     display: flex;
@@ -739,37 +761,43 @@ header img {
     margin: 0;
     padding: 4% 0 4% 0;
   }
-  .nav__localisation img {
+  .nav-presentation .nav__localisation input {
+    width: 45%;
+    border-style: none;
+    font-weight: bold;
+    font-size: 1.6em;
+    background-color: #eaeaea;
+  }
+  .nav-presentation .nav__localisation img {
     width: 35px;
     padding-right: 33px;
   }
-
-  .nav__bloc {
+  .nav-presentation .nav__bloc {
     background-color: #f6f6f6;
     width: 100%;
     padding-bottom: 10%;
   }
-  .nav__bloc h2 {
+  .nav-presentation .nav__bloc h2 {
     font-weight: bold;
     font-size: 2.3em;
     text-align: center;
     margin-top: 0;
     padding-top: 4%;
   }
-  .nav__bloc br {
+  .nav-presentation .nav__bloc br {
     display: none;
   }
-  .nav__bloc p {
+  .nav-presentation .nav__bloc p {
     font-size: 1.6em;
     text-align: center;
   }
-  .nav__bloc a {
+  .nav-presentation .nav__bloc a {
     text-decoration: none;
     font-size: 1.3em;
     color: #fff;
     font-weight: 500;
   }
-  .nav__bloc span {
+  .nav-presentation .nav__bloc span {
     display: block;
     text-align: center;
     width: 55%;
@@ -963,18 +991,12 @@ header img {
   font-size: 2.5em;
   text-align: center;
 }
-.section-resto a #img-fond--menilmontant {
-  background: url "public/img/menilmontant.jpg";
-}
-.section-resto a .img-fond--charonne {
-  background-image: url("../public/imag/charonne.jpg");
-}
 .section-resto__blocs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.section-resto__blocs a {
+.section-resto__blocs--container {
   display: flex;
   flex-direction: column;
   margin-right: auto;
@@ -988,21 +1010,41 @@ header img {
   height: 550px;
   box-shadow: 0 7px 10px lightgrey;
 }
-.section-resto__blocs a img {
+.section-resto__blocs--container a {
+  width: 100%;
+  height: 550px;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+}
+.section-resto__blocs--container i {
+  position: absolute;
+  z-index: auto;
+  margin: 200px 0 0 -80px;
+}
+.section-resto__blocs--container img {
   object-fit: cover;
   width: 100%;
   height: 70%;
   border-radius: 30px 30px 0 0;
   position: relative;
 }
+.section-resto__blocs--container .container-new {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 2;
+}
 .section-resto__blocs .new {
-  width: 180px;
+  width: 140px;
   color: #008766;
   background-color: #99e2d0;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 600;
+  margin-right: 3%;
 }
 .section-resto__blocs p {
   padding-left: 5%;
@@ -1018,9 +1060,6 @@ header img {
   justify-content: space-between;
   align-items: center;
 }
-.section-resto__blocs div i {
-  padding-right: 5%;
-}
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .section-resto {
@@ -1034,7 +1073,7 @@ header img {
     text-align: left;
     margin-top: 0;
   }
-  .section-resto__blocs a {
+  .section-resto__blocs--container {
     display: flex;
     flex-direction: column;
     margin-right: auto;
@@ -1045,10 +1084,22 @@ header img {
     text-decoration: none;
     color: #000;
     width: 90%;
-    height: 350px;
+    height: 365px;
     box-shadow: 0 7px 10px lightgrey;
   }
-  .section-resto__blocs a img {
+  .section-resto__blocs--container a {
+    width: 100%;
+    height: 365px;
+    text-decoration: none;
+    position: relative;
+    color: #000;
+  }
+  .section-resto__blocs--container i {
+    position: absolute;
+    z-index: auto;
+    margin: 113px 0 0 -80px;
+  }
+  .section-resto__blocs--container img {
     object-fit: cover;
     width: 100%;
     height: 70%;
@@ -1062,11 +1113,14 @@ header img {
     padding: 8px 0 8px 17px;
     font-size: 0.8em;
     font-weight: 600;
-    position: sticky;
+    margin-left: 200px;
+    position: absolute;
+    z-index: 2;
   }
   .section-resto__blocs p {
     padding-left: 5%;
     font-size: 1.3em;
+    margin-top: 15px;
   }
   .section-resto__blocs p em {
     font-weight: bold;
@@ -1094,7 +1148,7 @@ header img {
     text-align: left;
     margin-top: 0;
   }
-  .section-resto__blocs a {
+  .section-resto__blocs--container {
     display: flex;
     flex-direction: column;
     margin-right: auto;
@@ -1108,7 +1162,19 @@ header img {
     height: 400px;
     box-shadow: 0 7px 10px lightgrey;
   }
-  .section-resto__blocs a img {
+  .section-resto__blocs--container a {
+    width: 100%;
+    height: 400px;
+    text-decoration: none;
+    position: relative;
+    color: #000;
+  }
+  .section-resto__blocs--container i {
+    position: absolute;
+    z-index: auto;
+    margin: 113px 0 0 -80px;
+  }
+  .section-resto__blocs--container img {
     object-fit: cover;
     width: 100%;
     height: 70%;
