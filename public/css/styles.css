@@ -13,7 +13,7 @@ body {
   color: #fff;
   font-weight: 600;
   border-style: none;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to top, #FF79DA, #9356DC);
   border-radius: 50px;
   padding: 2.5% 6%;
   text-align: center;
@@ -24,6 +24,10 @@ body {
   box-shadow: 3px 5px 15px lightgrey;
   font-size: 2em;
 }
+.btn-commande:active {
+  background: linear-gradient(to top, #ff88e9, #a665d7);
+  box-shadow: 7px 9px 19px grey;
+}
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .btn-commande {
@@ -31,7 +35,7 @@ body {
     color: #fff;
     font-weight: 600;
     border-style: none;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background: linear-gradient(to top, #FF79DA, #9356DC);
     border-radius: 35px;
     padding: 4% 10%;
     text-align: center;
@@ -42,6 +46,10 @@ body {
     box-shadow: 3px 5px 15px lightgrey;
     font-size: 1em;
   }
+  .btn-commande:active {
+    background: linear-gradient(to top, #ff88e9, #a665d7);
+    box-shadow: 7px 9px 19px grey;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 900px) {
   .btn-commande {
@@ -49,7 +57,7 @@ body {
     color: #fff;
     font-weight: 600;
     border-style: none;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background: linear-gradient(to top, #FF79DA, #9356DC);
     border-radius: 35px;
     padding: 4% 10%;
     text-align: center;
@@ -60,15 +68,19 @@ body {
     box-shadow: 3px 5px 15px lightgrey;
     font-size: 1.5em;
   }
+  .btn-commande:active {
+    background: linear-gradient(to top, #ff88e9, #a665d7);
+    box-shadow: 7px 9px 19px grey;
+  }
 }
 .far {
   cursor: pointer;
   scale: 1;
   transition: transmform 600ms;
 }
-.far:hover {
+.far:active + .fas {
   scale: 1.5;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
 footer {
@@ -592,6 +604,52 @@ footer a #i-utensils {
     font-style: normal;
   }
 }
+.bloc-menus__entrees {
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    animation-play-state: paused;
+  }
+}
+.bloc-menus__plats {
+  animation: fadeinplats 4s;
+}
+
+@keyframes fadeinplats {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bloc-menus__desserts {
+  animation: fadeindesserts 4s;
+}
+
+@keyframes fadeindesserts {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header {
   width: 100%;
 }
@@ -689,10 +747,14 @@ header img {
   margin-right: auto;
   margin-bottom: 4%;
   margin-top: 5%;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to top, #FF79DA, #9356DC);
   border-radius: 100px;
   padding: 3% 2%;
   box-shadow: 0 7px 10px lightgrey;
+}
+.nav-presentation .nav__bloc span:active {
+  background: linear-gradient(to top, #ff88e9, #a665d7);
+  box-shadow: 7px 9px 19px grey;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -1017,10 +1079,16 @@ header img {
   position: relative;
   color: #000;
 }
-.section-resto__blocs--container i {
+.section-resto__blocs--container .far {
   position: absolute;
-  z-index: auto;
+  z-index: 3;
   margin: 200px 0 0 -80px;
+}
+.section-resto__blocs--container .fas {
+  position: absolute;
+  z-index: 1;
+  margin: 200px 0 0 -80px;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
 }
 .section-resto__blocs--container img {
   object-fit: cover;
@@ -1094,7 +1162,7 @@ header img {
     position: relative;
     color: #000;
   }
-  .section-resto__blocs--container i {
+  .section-resto__blocs--container .far {
     position: absolute;
     z-index: auto;
     margin: 113px 0 0 -80px;
@@ -1114,6 +1182,7 @@ header img {
     font-size: 0.8em;
     font-weight: 600;
     margin-left: 200px;
+    margin-top: 100px;
     position: absolute;
     z-index: 2;
   }
@@ -1169,7 +1238,7 @@ header img {
     position: relative;
     color: #000;
   }
-  .section-resto__blocs--container i {
+  .section-resto__blocs--container .far {
     position: absolute;
     z-index: auto;
     margin: 113px 0 0 -80px;

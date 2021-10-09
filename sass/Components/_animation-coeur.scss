@@ -2,8 +2,8 @@
     cursor: pointer;
     scale: (1);
     transition: transmform 600ms;
-    &:hover{
+    &:active + .fas{
         scale: (1.5);
-        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        color: linear-gradient(to bottom right, $color-secondary, $color-primary);
     }
 }
