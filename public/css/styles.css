@@ -24,7 +24,7 @@ body {
   box-shadow: 3px 5px 15px lightgrey;
   font-size: 2em;
 }
-.btn-commande:active {
+.btn-commande:hover {
   background: linear-gradient(to top, #ff88e9, #a665d7);
   box-shadow: 7px 9px 19px grey;
 }
@@ -46,7 +46,7 @@ body {
     box-shadow: 3px 5px 15px lightgrey;
     font-size: 1em;
   }
-  .btn-commande:active {
+  .btn-commande:hover {
     background: linear-gradient(to top, #ff88e9, #a665d7);
     box-shadow: 7px 9px 19px grey;
   }
@@ -68,7 +68,7 @@ body {
     box-shadow: 3px 5px 15px lightgrey;
     font-size: 1.5em;
   }
-  .btn-commande:active {
+  .btn-commande:hover {
     background: linear-gradient(to top, #ff88e9, #a665d7);
     box-shadow: 7px 9px 19px grey;
   }
@@ -83,6 +83,32 @@ body {
   color: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
+.loading-spinner {
+  animation: loading-spinner linear 1.5s;
+  border: double 20px lightgray;
+  border-top: solid 20px #FF79DA;
+  border-bottom: solid 20px #9356DC;
+  border-radius: 50%;
+  left: 40%;
+  top: 50%;
+  position: absolute;
+  z-index: 3;
+  width: 250px;
+  height: 250px;
+  opacity: 0;
+  animation-iteration-count: 2;
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
 footer {
   width: 100%;
   background-color: #353535;
@@ -617,7 +643,6 @@ footer a #i-utensils {
   }
   100% {
     opacity: 1;
-    animation-play-state: paused;
   }
 }
 .bloc-menus__plats {
@@ -752,7 +777,7 @@ header img {
   padding: 3% 2%;
   box-shadow: 0 7px 10px lightgrey;
 }
-.nav-presentation .nav__bloc span:active {
+.nav-presentation .nav__bloc span:hover {
   background: linear-gradient(to top, #ff88e9, #a665d7);
   box-shadow: 7px 9px 19px grey;
 }
@@ -807,10 +832,14 @@ header img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 4%;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background: linear-gradient(to top, #FF79DA, #9356DC);
     border-radius: 35px;
     padding: 5% 4%;
     box-shadow: 0 7px 10px lightgrey;
+  }
+  .nav-presentation .nav__bloc span:hover {
+    background: linear-gradient(to top, #ff88e9, #a665d7);
+    box-shadow: 7px 9px 19px grey;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 900px) {
@@ -866,10 +895,14 @@ header img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 4%;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background: linear-gradient(to top, #FF79DA, #9356DC);
     border-radius: 35px;
     padding: 5% 4%;
     box-shadow: 0 7px 10px lightgrey;
+  }
+  .nav-presentation .nav__bloc span:hover {
+    background: linear-gradient(to top, #ff88e9, #a665d7);
+    box-shadow: 7px 9px 19px grey;
   }
 }
 .section-fct {
@@ -1048,6 +1081,7 @@ header img {
   background-color: #f6f6f6;
   width: 100%;
   padding: 65px 0;
+  position: relative;
 }
 .section-resto h3 {
   font-size: 2.5em;

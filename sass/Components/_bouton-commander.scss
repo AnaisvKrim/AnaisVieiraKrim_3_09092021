@@ -13,7 +13,7 @@
     margin-top: 10%;
     box-shadow: 3px 5px 15px lightgrey;
     font-size: 2em;
-    &:active{
+    &:hover{
         @include btn-color--active;
         box-shadow: 7px 9px 19px grey;
     }
@@ -35,7 +35,7 @@
             margin-top: 10%;
             box-shadow: 3px 5px 15px lightgrey;
             font-size: 1em;
-            &:active{
+            &:hover{
                 @include btn-color--active;
                 box-shadow: 7px 9px 19px grey;
             }
@@ -58,7 +58,7 @@
             margin-top: 10%;
             box-shadow: 3px 5px 15px lightgrey;
             font-size: 1.5em;
-            &:active{
+            &:hover{
                 @include btn-color--active;
                 box-shadow: 7px 9px 19px grey;
             }

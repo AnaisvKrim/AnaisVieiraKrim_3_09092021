@@ -55,7 +55,7 @@
             border-radius: 100px;
             padding: 3% 2%;
             box-shadow: 0 7px 10px lightgrey;
-            &:active{
+            &:hover{
                 @include btn-color--active;
                 box-shadow: 7px 9px 19px grey;
             }
@@ -113,11 +113,14 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 4%;
-                background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+                @include btn-color;
                 border-radius: 35px;
                 padding: 5% 4%;
                 box-shadow: 0 7px 10px lightgrey;
-
+                &:hover{
+                    @include btn-color--active;
+                    box-shadow: 7px 9px 19px grey;
+                }
             }
         }
     }
@@ -175,11 +178,14 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 4%;
-                background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+                @include btn-color;
                 border-radius: 35px;
                 padding: 5% 4%;
                 box-shadow: 0 7px 10px lightgrey;
-
+                &:hover{
+                    @include btn-color--active;
+                    box-shadow: 7px 9px 19px grey;
+                }
             }
         }
     }
