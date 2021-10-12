@@ -83,20 +83,41 @@ body {
   color: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
+.fond {
+  animation: fond linear 3s;
+  width: 100%;
+  height: 800px;
+  background: lightgray;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+}
+.fond ::after {
+  display: none;
+}
+
+@keyframes fond {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
 .loading-spinner {
   animation: loading-spinner linear 1.5s;
   border: double 20px lightgray;
   border-top: solid 20px #FF79DA;
   border-bottom: solid 20px #9356DC;
   border-radius: 50%;
-  left: 40%;
-  top: 50%;
-  position: absolute;
-  z-index: 3;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   opacity: 0;
   animation-iteration-count: 2;
+  margin: auto;
 }
 
 @keyframes loading-spinner {
@@ -211,8 +232,7 @@ footer a #i-utensils {
   width: 100%;
 }
 #header-annexe h1 {
-  margin-top: 0;
-  margin-right: auto;
+  font-size: 6em;
 }
 #header-annexe img {
   width: 45%;
@@ -232,8 +252,7 @@ footer a #i-utensils {
     width: 100%;
   }
   #header-annexe h1 {
-    margin-top: 0;
-    margin-right: auto;
+    font-size: 2.3em;
   }
   #header-annexe img {
     width: 60%;
@@ -257,8 +276,7 @@ footer a #i-utensils {
     width: 100%;
   }
   #header-annexe h1 {
-    margin-top: 0;
-    margin-right: auto;
+    font-size: 4em;
   }
   #header-annexe img {
     width: 60%;
@@ -571,6 +589,15 @@ footer a #i-utensils {
     font-weight: bold;
     font-style: normal;
   }
+  .bloc-menus__entrees .animation-check {
+    background: #99E2D0;
+    width: 15%;
+    height: 100px;
+    margin-left: 20px;
+  }
+  .bloc-menus__entrees .animation-check .fa-check-circle {
+    color: #fff;
+  }
   .bloc-menus__plats {
     margin-top: 9%;
   }
@@ -680,9 +707,11 @@ header {
 }
 header h1 {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  font-family: Shrikhand;
+  font-size: 6em;
+  text-align: center;
   margin-bottom: 0;
+  margin-top: 2%;
 }
 header img {
   width: 60%;
@@ -695,9 +724,10 @@ header img {
   }
   header h1 {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
+    font-family: Shrikhand;
+    font-size: 3em;
+    text-align: center;
+    margin: 2% 0;
   }
   header img {
     width: 300px;
@@ -710,9 +740,10 @@ header img {
   }
   header h1 {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3%;
+    font-family: Shrikhand;
+    font-size: 4.5em;
+    text-align: center;
+    margin: 2% 0;
   }
   header img {
     width: 50%;
