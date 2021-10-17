@@ -45,6 +45,7 @@
             .nom-menu{
                 width: 90%;
                 margin-left: 3%;
+                text-overflow: ellipsis;
             }
             .prix{
                 width: 10%;
@@ -52,6 +53,8 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
+                transform: translate(0);
+                transition: transform linear;
             
             }
             .animation-check{
@@ -67,13 +70,26 @@
                 overflow: hidden;
                 i{
                     color: #fff;
+                    transition: transform 300ms;
+                    transition-delay: 100ms;
+                    transform: rotate(0turn);
                 }
             }
-            .container:hover > .animation-check{
+            .container:hover{
+                .prix{
+                    transform: translate(15px);
+                }
+                > .animation-check{
                 width: 15%;
                 transform: scaleX(1);
                 transform-origin: right;
-            }
+                }
+                i{
+                    transform: rotate(2turn);
+                }
+            } 
+                
+            
         }
         
         &__plats{
@@ -109,6 +125,8 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
+                transform: translate(0);
+                transition: transform linear;
             
             }
             .animation-check{
@@ -124,13 +142,24 @@
                 overflow: hidden;
                 i{
                     color: #fff;
+                    transition: transform 300ms;
+                    transition-delay: 100ms;
+                    transform: rotate(0turn);
                 }
             }
-            .container:hover > .animation-check{
+            .container:hover{
+                .prix{
+                    transform: translate(15px);
+                }
+                > .animation-check{
                 width: 15%;
                 transform: scaleX(1);
                 transform-origin: right;
-            }
+                }
+                i{
+                    transform: rotate(2turn);
+                }
+            } 
         }
 
         &__desserts{
@@ -166,6 +195,8 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
+                transform: translate(0);
+                transition: transform linear;
             
             }
             .animation-check{
@@ -181,13 +212,24 @@
                 overflow: hidden;
                 i{
                     color: #fff;
+                    transition: transform 300ms;
+                    transition-delay: 100ms;
+                    transform: rotate(0turn);
                 }
             }
-            .container:hover > .animation-check{
+            .container:hover{
+                .prix{
+                    transform: translate(15px);
+                }
+                > .animation-check{
                 width: 15%;
                 transform: scaleX(1);
                 transform-origin: right;
-            }
+                }
+                i{
+                    transform: rotate(2turn);
+                }
+            } 
         }
     }
     @media screen and (min-width: 320px) and (max-width: 600px){
@@ -237,6 +279,11 @@
                 .nom-menu{
                     width: 90%;
                     margin-left: 3%;
+                    p{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        height: 75px;
+                    }
                 }
                 .prix{
                     width: 10%;
@@ -244,6 +291,8 @@
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
+                    transform: translate(0);
+                    transition: transform linear;
                 
                 }
                 .animation-check{
@@ -259,13 +308,24 @@
                     overflow: hidden;
                     i{
                         color: #fff;
+                        transition: transform 300ms;
+                        transition-delay: 100ms;
+                        transform: rotate(0turn);
                     }
                 }
-                .container:hover > .animation-check{
+                .container:hover{
+                    .prix{
+                        transform: translate(15px);
+                    }
+                    > .animation-check{
                     width: 15%;
                     transform: scaleX(1);
                     transform-origin: right;
-                }
+                    }
+                    i{
+                        transform: rotate(2turn);
+                    }
+                } 
             }
             
             &__plats{
@@ -301,6 +361,8 @@
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
+                    transform: translate(0);
+                    transition: transform linear;
                 
                 }
                 .animation-check{
@@ -316,13 +378,24 @@
                     overflow: hidden;
                     i{
                         color: #fff;
+                        transition: transform 300ms;
+                        transition-delay: 100ms;
+                        transform: rotate(0turn);
                     }
                 }
-                .container:hover > .animation-check{
+                .container:hover{
+                    .prix{
+                        transform: translate(15px);
+                    }
+                    > .animation-check{
                     width: 15%;
                     transform: scaleX(1);
                     transform-origin: right;
-                }
+                    }
+                    i{
+                        transform: rotate(2turn);
+                    }
+                } 
             }
 
             &__desserts{
@@ -358,6 +431,8 @@
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
+                    transform: translate(0);
+                    transition: transform linear;
                 
                 }
                 .animation-check{
@@ -373,13 +448,24 @@
                     overflow: hidden;
                     i{
                         color: #fff;
+                        transition: transform 300ms;
+                        transition-delay: 100ms;
+                        transform: rotate(0turn);
                     }
                 }
-                .container:hover > .animation-check{
+                .container:hover{
+                    .prix{
+                        transform: translate(15px);
+                    }
+                    > .animation-check{
                     width: 15%;
                     transform: scaleX(1);
                     transform-origin: right;
-                }
+                    }
+                    i{
+                        transform: rotate(2turn);
+                    }
+                } 
             }
         }
     }
@@ -437,6 +523,8 @@
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
+                    transform: translate(0);
+                    transition: transform linear;
                 
                 }
                 .animation-check{
@@ -452,13 +540,24 @@
                     overflow: hidden;
                     i{
                         color: #fff;
+                        transition: transform 300ms;
+                        transition-delay: 100ms;
+                        transform: rotate(0turn);
                     }
                 }
-                .container:hover > .animation-check{
+                .container:hover{
+                    .prix{
+                        transform: translate(15px);
+                    }
+                    > .animation-check{
                     width: 15%;
                     transform: scaleX(1);
                     transform-origin: right;
-                }
+                    }
+                    i{
+                        transform: rotate(2turn);
+                    }
+                } 
                 
             }
             
@@ -494,6 +593,8 @@
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
+                    transform: translate(0);
+                    transition: transform linear;
                 
                 }
                 .animation-check{
@@ -509,13 +610,24 @@
                     overflow: hidden;
                     i{
                         color: #fff;
+                        transition: transform 300ms;
+                        transition-delay: 100ms;
+                        transform: rotate(0turn);
                     }
                 }
-                .container:hover > .animation-check{
+                .container:hover{
+                    .prix{
+                        transform: translate(15px);
+                    }
+                    > .animation-check{
                     width: 15%;
                     transform: scaleX(1);
                     transform-origin: right;
-                }
+                    }
+                    i{
+                        transform: rotate(2turn);
+                    }
+                } 
             }
 
             &__desserts{
@@ -550,6 +662,8 @@
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
+                    transform: translate(0);
+                    transition: transform linear;
                 
                 }
                 .animation-check{
@@ -565,13 +679,24 @@
                     overflow: hidden;
                     i{
                         color: #fff;
+                        transition: transform 300ms;
+                        transition-delay: 100ms;
+                        transform: rotate(0turn);
                     }
                 }
-                .container:hover > .animation-check{
+                .container:hover{
+                    .prix{
+                        transform: translate(15px);
+                    }
+                    > .animation-check{
                     width: 15%;
                     transform: scaleX(1);
                     transform-origin: right;
-                }
+                    }
+                    i{
+                        transform: rotate(2turn);
+                    }
+                } 
             }
         }
     }

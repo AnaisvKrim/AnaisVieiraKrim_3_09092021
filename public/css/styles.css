@@ -345,6 +345,7 @@ footer a #i-utensils {
 .bloc-menus__entrees .nom-menu {
   width: 90%;
   margin-left: 3%;
+  text-overflow: ellipsis;
 }
 .bloc-menus__entrees .prix {
   width: 10%;
@@ -352,6 +353,8 @@ footer a #i-utensils {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  transform: translate(0);
+  transition: transform linear;
 }
 .bloc-menus__entrees .animation-check {
   transform: scaleX(0);
@@ -367,11 +370,20 @@ footer a #i-utensils {
 }
 .bloc-menus__entrees .animation-check i {
   color: #fff;
+  transition: transform 300ms;
+  transition-delay: 100ms;
+  transform: rotate(0turn);
+}
+.bloc-menus__entrees .container:hover .prix {
+  transform: translate(15px);
 }
 .bloc-menus__entrees .container:hover > .animation-check {
   width: 15%;
   transform: scaleX(1);
   transform-origin: right;
+}
+.bloc-menus__entrees .container:hover i {
+  transform: rotate(2turn);
 }
 .bloc-menus__plats {
   margin-top: 5%;
@@ -407,6 +419,8 @@ footer a #i-utensils {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  transform: translate(0);
+  transition: transform linear;
 }
 .bloc-menus__plats .animation-check {
   transform: scaleX(0);
@@ -422,11 +436,20 @@ footer a #i-utensils {
 }
 .bloc-menus__plats .animation-check i {
   color: #fff;
+  transition: transform 300ms;
+  transition-delay: 100ms;
+  transform: rotate(0turn);
+}
+.bloc-menus__plats .container:hover .prix {
+  transform: translate(15px);
 }
 .bloc-menus__plats .container:hover > .animation-check {
   width: 15%;
   transform: scaleX(1);
   transform-origin: right;
+}
+.bloc-menus__plats .container:hover i {
+  transform: rotate(2turn);
 }
 .bloc-menus__desserts {
   margin-top: 5%;
@@ -462,6 +485,8 @@ footer a #i-utensils {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  transform: translate(0);
+  transition: transform linear;
 }
 .bloc-menus__desserts .animation-check {
   transform: scaleX(0);
@@ -477,11 +502,20 @@ footer a #i-utensils {
 }
 .bloc-menus__desserts .animation-check i {
   color: #fff;
+  transition: transform 300ms;
+  transition-delay: 100ms;
+  transform: rotate(0turn);
+}
+.bloc-menus__desserts .container:hover .prix {
+  transform: translate(15px);
 }
 .bloc-menus__desserts .container:hover > .animation-check {
   width: 15%;
   transform: scaleX(1);
   transform-origin: right;
+}
+.bloc-menus__desserts .container:hover i {
+  transform: rotate(2turn);
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -534,12 +568,19 @@ footer a #i-utensils {
     width: 90%;
     margin-left: 3%;
   }
+  .bloc-menus__entrees .nom-menu p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 75px;
+  }
   .bloc-menus__entrees .prix {
     width: 10%;
     margin-right: 5%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    transform: translate(0);
+    transition: transform linear;
   }
   .bloc-menus__entrees .animation-check {
     transform: scaleX(0);
@@ -555,11 +596,20 @@ footer a #i-utensils {
   }
   .bloc-menus__entrees .animation-check i {
     color: #fff;
+    transition: transform 300ms;
+    transition-delay: 100ms;
+    transform: rotate(0turn);
+  }
+  .bloc-menus__entrees .container:hover .prix {
+    transform: translate(15px);
   }
   .bloc-menus__entrees .container:hover > .animation-check {
     width: 15%;
     transform: scaleX(1);
     transform-origin: right;
+  }
+  .bloc-menus__entrees .container:hover i {
+    transform: rotate(2turn);
   }
   .bloc-menus__plats {
     margin-top: 9%;
@@ -595,6 +645,8 @@ footer a #i-utensils {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    transform: translate(0);
+    transition: transform linear;
   }
   .bloc-menus__plats .animation-check {
     transform: scaleX(0);
@@ -610,11 +662,20 @@ footer a #i-utensils {
   }
   .bloc-menus__plats .animation-check i {
     color: #fff;
+    transition: transform 300ms;
+    transition-delay: 100ms;
+    transform: rotate(0turn);
+  }
+  .bloc-menus__plats .container:hover .prix {
+    transform: translate(15px);
   }
   .bloc-menus__plats .container:hover > .animation-check {
     width: 15%;
     transform: scaleX(1);
     transform-origin: right;
+  }
+  .bloc-menus__plats .container:hover i {
+    transform: rotate(2turn);
   }
   .bloc-menus__desserts {
     margin-top: 9%;
@@ -650,6 +711,8 @@ footer a #i-utensils {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    transform: translate(0);
+    transition: transform linear;
   }
   .bloc-menus__desserts .animation-check {
     transform: scaleX(0);
@@ -665,11 +728,20 @@ footer a #i-utensils {
   }
   .bloc-menus__desserts .animation-check i {
     color: #fff;
+    transition: transform 300ms;
+    transition-delay: 100ms;
+    transform: rotate(0turn);
+  }
+  .bloc-menus__desserts .container:hover .prix {
+    transform: translate(15px);
   }
   .bloc-menus__desserts .container:hover > .animation-check {
     width: 15%;
     transform: scaleX(1);
     transform-origin: right;
+  }
+  .bloc-menus__desserts .container:hover i {
+    transform: rotate(2turn);
   }
 }
 @media screen and (min-width: 601px) and (max-width: 900px) {
@@ -727,6 +799,8 @@ footer a #i-utensils {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    transform: translate(0);
+    transition: transform linear;
   }
   .bloc-menus__entrees .animation-check {
     transform: scaleX(0);
@@ -742,11 +816,20 @@ footer a #i-utensils {
   }
   .bloc-menus__entrees .animation-check i {
     color: #fff;
+    transition: transform 300ms;
+    transition-delay: 100ms;
+    transform: rotate(0turn);
+  }
+  .bloc-menus__entrees .container:hover .prix {
+    transform: translate(15px);
   }
   .bloc-menus__entrees .container:hover > .animation-check {
     width: 15%;
     transform: scaleX(1);
     transform-origin: right;
+  }
+  .bloc-menus__entrees .container:hover i {
+    transform: rotate(2turn);
   }
   .bloc-menus__plats {
     margin-top: 9%;
@@ -781,6 +864,8 @@ footer a #i-utensils {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    transform: translate(0);
+    transition: transform linear;
   }
   .bloc-menus__plats .animation-check {
     transform: scaleX(0);
@@ -796,11 +881,20 @@ footer a #i-utensils {
   }
   .bloc-menus__plats .animation-check i {
     color: #fff;
+    transition: transform 300ms;
+    transition-delay: 100ms;
+    transform: rotate(0turn);
+  }
+  .bloc-menus__plats .container:hover .prix {
+    transform: translate(15px);
   }
   .bloc-menus__plats .container:hover > .animation-check {
     width: 15%;
     transform: scaleX(1);
     transform-origin: right;
+  }
+  .bloc-menus__plats .container:hover i {
+    transform: rotate(2turn);
   }
   .bloc-menus__desserts {
     margin-top: 9%;
@@ -835,6 +929,8 @@ footer a #i-utensils {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    transform: translate(0);
+    transition: transform linear;
   }
   .bloc-menus__desserts .animation-check {
     transform: scaleX(0);
@@ -850,11 +946,20 @@ footer a #i-utensils {
   }
   .bloc-menus__desserts .animation-check i {
     color: #fff;
+    transition: transform 300ms;
+    transition-delay: 100ms;
+    transform: rotate(0turn);
+  }
+  .bloc-menus__desserts .container:hover .prix {
+    transform: translate(15px);
   }
   .bloc-menus__desserts .container:hover > .animation-check {
     width: 15%;
     transform: scaleX(1);
     transform-origin: right;
+  }
+  .bloc-menus__desserts .container:hover i {
+    transform: rotate(2turn);
   }
 }
 .bloc-menus__entrees {
