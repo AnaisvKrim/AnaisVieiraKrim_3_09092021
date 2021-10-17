@@ -83,22 +83,44 @@ body {
   color: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
+.fond {
+  animation: fond 3500ms linear;
+  width: 0%;
+  height: 900px;
+  background-color: lightgray;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fond {
+  0% {
+    width: 0;
+  }
+  1% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .loading-spinner {
-  animation: loading-spinner 1.5s linear infinite;
+  animation: loading-spinner 1s linear infinite;
   animation-delay: 500ms;
   border: double 20px rgba(126, 101, 101, 0);
-  border-top: solid 20px #FF79DA;
-  border-bottom: solid 20px #9356DC;
+  border-top: solid 15px #FF79DA;
+  border-bottom: solid 15px #9356DC;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   opacity: 0;
-  animation-iteration-count: 2;
+  animation-iteration-count: 3;
   margin: auto;
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  background-attachment: scroll;
+  position: fixed;
+  z-index: 2;
 }
 
 @keyframes loading-spinner {

@@ -1,18 +1,41 @@
+.fond{
+    animation: fond 3500ms linear;
+    width: 0%;
+    height: 900px;
+    background-color: lightgray;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes fond{
+    0%{
+        width: 0;
+    }
+    1%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
 
     .loading-spinner {
-        animation: loading-spinner linear 1.5s;
-        border: double 20px lightgray;
-        border-top: solid 20px $color-secondary;
-        border-bottom: solid 20px $color-primary;
+        animation: loading-spinner 1s linear infinite;
+        animation-delay: 500ms;
+        border: double 20px rgb(126, 101, 101, 0);
+        border-top: solid 15px $color-secondary;
+        border-bottom: solid 15px $color-primary;
         border-radius: 50%;
-        left: 40%;
-        top: 50%;
-        position: absolute;
-        z-index: 3;
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
         opacity: 0;
-        animation-iteration-count: 2;
+        animation-iteration-count: 3;
+        margin: auto;
+        position: fixed;
+        z-index: 2;
     }
 
 @keyframes loading-spinner {
