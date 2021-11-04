@@ -1,9 +1,25 @@
-.far{
-    cursor: pointer;
-    scale: (1);
-    transition: transmform 600ms;
-    &:active + .fas{
-        scale: (1.5);
-        color: linear-gradient(to bottom right, $color-secondary, $color-primary);
+.heart-icon, .heart-icon__menu{
+    #pleins{
+        background: linear-gradient(#ff79da,#9356dc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+        transition: all 1s;
+    }
+    #vide{
+        cursor: pointer;
+        opacity: 1;
+        transition-delay: 100ms;
+    }
+}
+.heart-icon, .heart-icon__menu{
+    &:hover{
+        #pleins{
+            opacity: 1;
+        }
+        #vide{
+            opacity: 0;
+        }
     }
 }

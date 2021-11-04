@@ -11,9 +11,9 @@
 	<title>OhMyFood</title>
 </head>
 <body>
-	<section class="fond">
+	<div class="fond">
 		<div class="loading-spinner"></div>
-	</section>
+	</div>
 	<header>
 		<h1>ohmyfood</h1>
 	</header>
@@ -46,40 +46,49 @@
 			<div class="section-resto__blocs--container">
 				<a href="menilmontant.html" id="img-fond--menilmontant">
 					<div class="container-new"><p class="new">Nouveau</p></div>
-					<img src="public/img/menilmontant.jpg" alt="La palette du goût">
+					<img src="public/img/menilmontant.jpg" alt="La palette du goût" class="img-restau">
 					<p><em>La palette du goût</em> <br/> Ménilmontant</p>	
 				</a>
-				<span class="coeur"><i class="far fa-heart fa-3x"></i></span>
+			</div>
+			<div class="heart-icon one">
+				<i class="fas fa-heart fa-3x" id="pleins"></i>
+				<i class="far fa-heart fa-3x" id="vide"></i>
 			</div>
 
 			<div class="section-resto__blocs--container">
 				<a href="charonne.html" class="img-fond--charonne">	
 					<div class="container-new"><p class="new">Nouveau</p></div>
-					<img src="public/img/charonne.jpg" alt="La note enchantée">
+					<img src="public/img/charonne.jpg" alt="La note enchantée" class="img-restau">
 					<p><em>La note enchantée</em> <br/>Charonne</p>
 				</a>
-				<span class="coeur">
-					<i class="far fa-heart fa-3x"></i>
-					<i class="fas fa-heart fa-3x"></i>
-				</span>
+			</div>
+			<div class="heart-icon two">
+				<i class="fas fa-heart fa-3x" id="pleins"></i>
+				<i class="far fa-heart fa-3x" id="vide"></i>
 			</div>
 			
 			<div class="section-resto__blocs--container">
 				<a href="cite_rouge.html">
-					<img src="public/img/cite_rouge.jpg" alt="A la française">
+					<img src="public/img/cite_rouge.jpg" alt="A la française" class="img-restau">
 					<div>
 						<p><em>À la française</em> <br/>Cité Rouge</p>	
 					</div>
-				</a>
-				<span class="coeur"><i class="far fa-heart fa-3x"></i></span>
+				</a>	
 			</div>
+			<div class="heart-icon three">
+					<i class="fas fa-heart fa-3x" id="pleins"></i>
+					<i class="far fa-heart fa-3x" id="vide"></i>
+				</div>
 
 			<div class="section-resto__blocs--container">
 				<a href="folie-mericourt.html">
-					<img src="public/img/folie-mericourt.jpg" alt="Le délice des sens">
+					<img src="public/img/folie-mericourt.jpg" alt="Le délice des sens" class="img-restau">
 					<p><em>Le délice des sens</em><br/>Folie-Méricourt</p>
-				</a>
-				<span class="coeur"><i class="far fa-heart fa-3x"></i></span>
+				</a>	
+			</div>
+			<div class="heart-icon four">
+					<i class="fas fa-heart fa-3x" id="pleins"></i>
+					<i class="far fa-heart fa-3x" id="vide"></i>
 			</div>
 
 		</div>

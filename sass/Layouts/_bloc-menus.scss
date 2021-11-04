@@ -18,6 +18,14 @@
             margin: 0 0 3% 0;
             padding-left: 6%;  
         }
+        .heart-icon__menu {
+            position: absolute;
+            left: 86%;
+            top: 7%;
+            #pleins{
+                position: absolute;
+            }
+        }
         &__entrees{
             margin-top: 5%;
             h2{
@@ -43,18 +51,19 @@
                 }
             }
             .nom-menu{
-                width: 90%;
+                width: auto;
                 margin-left: 3%;
                 text-overflow: ellipsis;
+                white-space: nowrap;
             }
             .prix{
-                width: 10%;
                 margin-right: 5%;
+                margin-left: auto;
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
                 transform: translate(0);
-                transition: transform linear;
+                transition: all 300ms;
             
             }
             .animation-check{
@@ -116,18 +125,19 @@
                 }
             }
             .nom-menu{
-                width: 90%;
+                width: auto;
                 margin-left: 3%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             .prix{
-                width: 10%;
                 margin-right: 5%;
+                margin-left: auto;
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
                 transform: translate(0);
-                transition: transform linear;
-            
+                transition: all 300ms;
             }
             .animation-check{
                 transform: scaleX(0);
@@ -186,18 +196,20 @@
                 }
             }
             .nom-menu{
-                width: 90%;
+                width: auto;
                 margin-left: 3%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             .prix{
-                width: 10%;
                 margin-right: 5%;
+                margin-left: auto;
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
                 transform: translate(0);
-                transition: transform linear;
-            
+                transition: all 300ms;
             }
             .animation-check{
                 transform: scaleX(0);
@@ -277,23 +289,23 @@
                     }
                 }
                 .nom-menu{
-                    width: 90%;
+                    width: auto;
                     margin-left: 3%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                     p{
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        height: 75px;
+                        min-width: 0;
+                        min-height: 0;
                     }
                 }
                 .prix{
-                    width: 10%;
                     margin-right: 5%;
+                    margin-left: auto;
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
-                    transform: translate(0);
-                    transition: transform linear;
-                
+                    // transform: scale(0);
+                    transition: transform ease-in-out 300ms;
                 }
                 .animation-check{
                     transform: scaleX(0);
@@ -315,10 +327,10 @@
                 }
                 .container:hover{
                     .prix{
-                        transform: translate(15px);
+                        transform: scale(1);
                     }
                     > .animation-check{
-                    width: 15%;
+                    width: 80px;
                     transform: scaleX(1);
                     transform-origin: right;
                     }
