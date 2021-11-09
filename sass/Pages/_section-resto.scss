@@ -165,6 +165,24 @@
             }
         }
         }
+        .heart-icon{
+            &.one{
+                left: 73%;
+                top: 27%;
+            }
+            &.two{
+                right: 13%;
+                top: 48%;
+            }
+            &.three{
+                top: 69%;
+                left: 73%;
+            }
+            &.four{
+                right: 14%;
+                top: 90%;
+            }
+        }
     }
 
     @media screen and (min-width: 601px) and (max-width: 900px){
@@ -232,6 +250,24 @@
                 padding-right: 5%;
             }
         }
+        }
+        .heart-icon{
+            &.one{
+                left: 75%;
+                top: 27%;
+            }
+            &.two{
+                top: 48%;
+                left: 75%;
+            }
+            &.three{
+                left: 75%;
+                top: 70%;
+            }
+            &.four{
+                top: 91%;
+                left: 75%;
+            }
         }
     }
 }
